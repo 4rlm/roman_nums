@@ -18,14 +18,14 @@ task :console do
   require "active_support/all"
   ARGV.clear
 
-  scraped_links = run_sudoku
+  scraped_links = run_roman_nums
   # binding.pry
 
   IRB.start
 end
 
 
-def run_sudoku
+def run_roman_nums
   binding.pry
   solve = RomanNums::Solver.new
   res = solve.start
