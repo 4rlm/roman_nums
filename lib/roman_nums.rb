@@ -8,7 +8,7 @@ require 'pry'
 module RomanNums
 
   def self.convert(args={})
-    results_hash = self::Solver.new.convert(args)
+    number_hashes = self::Solver.new.convert(args)
   end
 
 end

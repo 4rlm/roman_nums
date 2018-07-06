@@ -18,7 +18,7 @@ task :console do
   require "active_support/all"
   ARGV.clear
 
-  results_hash = run_roman_nums
+  number_hashes = run_roman_nums
   # binding.pry
 
   IRB.start
@@ -28,5 +28,5 @@ end
 def run_roman_nums
   arabic_nums = [3994, 4336, 9233, 1376, 8851, 6222, 1839, 3570, 8660, 9018, 4448, 1827, 9753, 2738, 8386, 9867, 1698, 9022, 8631, 8382, 4752]
 
-  results_hash = RomanNums.convert(arabic_nums: arabic_nums)
+  number_hashes = RomanNums.convert(arabic_nums: arabic_nums)
 end
