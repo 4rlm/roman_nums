@@ -18,7 +18,7 @@ task :console do
   require "active_support/all"
   ARGV.clear
 
-  scraped_links = run_roman_nums
+  results_hash = run_roman_nums
   # binding.pry
 
   IRB.start
@@ -26,14 +26,7 @@ end
 
 
 def run_roman_nums
-  binding.pry
-  solve = RomanNums::Solver.new
-  res = solve.start
-  binding.pry
+  arabic_nums = [3994, 4336, 9233, 1376, 8851, 6222, 1839, 3570, 8660, 9018, 4448, 1827, 9753, 2738, 8386, 9867, 1698, 9022, 8631, 8382, 4752]
 
-  # scraper = LinkScraper::Scrape.new({text_criteria: text_criteria, path_criteria: path_criteria})
-  # scraped_links = scraper.start('https://en.wikipedia.org/wiki/Austin%2C_Texas')
-  # binding.pry
-
-  # scraper = LinkScraper::Scrape.new(WebsCriteria.all_scrub_web_criteria)
+  results_hash = RomanNums.convert(arabic_nums: arabic_nums)
 end
