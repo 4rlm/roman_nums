@@ -1,9 +1,7 @@
-RSpec.describe RomanNums do
-  it "has a version number" do
-    expect(RomanNums::VERSION).not_to be nil
-  end
+require 'roman_nums'
+require 'spec_helper'
+# require 'crm_formatter'
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
+RSpec.describe RomanNums do
+  # let(:obj) { AnagramAlgo }
 end
