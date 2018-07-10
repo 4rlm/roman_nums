@@ -1,3 +1,3 @@
 module RomanNums
-  VERSION = "1.02"
+  VERSION = "2.0"
 end
