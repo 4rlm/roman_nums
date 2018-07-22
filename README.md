@@ -1,5 +1,6 @@
 # RomanNums
 
+[![Build Status](https://travis-ci.org/4rlm/roman_nums.svg?branch=master)](https://travis-ci.org/4rlm/roman_nums)
 [![Gem Version](https://badge.fury.io/rb/roman_nums.svg)](https://badge.fury.io/rb/roman_nums)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
